@@ -1,0 +1,387 @@
+body.light {
+    --background-color: var(--light-background-color);
+    --text-color: var(--light-text-color);
+    --hover-color: var(--light-hover-color);
+    --text-hover-color: var(--light-text-hover-color);
+    --component-color: var(--light-component-color);
+  }
+  body.dark {
+    --background-color: var(--dark-background-color);
+    --text-color: var(--dark-text-color);
+    --hover-color: var(--dark-hover-color);
+    --text-hover-color: white;
+    --component-color: var(--dark-component-color);
+  }
+
+
+.postflexcontainer {
+width: 100vw;
+height: 1200px;
+background-color: var(--background-color) ;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+
+.postpagecontainer {
+    width: 80%;
+    height: 1200px;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.nftflexcontainer {
+    height: 1000px;
+    width: 35%;
+  
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nftcontainer {
+    height: 500px;
+    width: 100%;
+  
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nftcontainer img {
+    height: 400px;
+    width: 400px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--component-color);
+    border-width: 2px;
+}
+
+.nftcontentcontainer {
+    height: 600px;
+    width: 100%;
+  
+    margin-top: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--component-color);
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nftinfocontainer {
+    height: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5px;
+    align-items: center;
+
+}
+
+.nftinfocontainer svg{
+    font-size: 22px;
+    color: var(--text-color);
+    margin-left: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.nftinfocontainer svg:hover{
+    color: red;
+    transform: scale(1.1);
+    }
+
+.nftinfocontainer h1{
+    font-size: 22px;
+    color: var(--text-color);
+    margin-right: auto;
+    font-family: 'Poppins';
+    font-weight: 600;
+    }
+
+    .likenumber{
+        font-size: 22px;
+        color: var(--text-color);
+        margin-left: 10px;
+        font-family: 'Poppins';
+        font-weight: 200;
+        }
+    .nftcontentseperator {
+        width: 100%;
+        height: 2px;
+        background-color: var(--component-color);
+    }
+
+    .nftownercontainer {
+        height: 50px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+        align-items: center;
+    
+    }
+
+    .nftdescriptioncontainer {
+        width: 90%;
+        height: 380px;
+        word-wrap: break-word;
+        margin-top: 10px;
+        overflow: hidden;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 18px;
+        color: var(--text-color);
+    }
+
+    .commentsection::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: var(--component-color);
+    }
+    
+    .commentsection::-webkit-scrollbar
+    {
+        width: 12px;
+        background-color: var(--component-color);
+    }
+    
+    .commentsection::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: var(--text-color);
+    }
+
+
+    .commentsection {
+        
+        height: 100%;
+        width: 100%;
+        
+        overflow-y: auto;
+    }
+
+    .postprofilepicturecontainer {
+        height: 35px;
+        width: 35px;
+        background-color: var(--component-color);
+        border-radius: 100px;
+        margin-right: 15px;
+    }
+    .nftownercontainer h1 {
+
+    font-size: 15px;
+    color: var(--text-hover-color);
+    margin-right: auto;
+    font-family: 'Poppins';
+    font-weight: 400;
+    }
+
+.cmtcontainer {
+    height: 800px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 2%;
+}
+
+.commentcontainer {
+    height: 800px;
+    width: 100%;
+    border-style: solid;
+    border-color: var(--component-color);
+    border-radius: 10px;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.submitcmtcontainer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.submitcmtcontainer input{
+    background-color: var(--component-color);
+    border: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    color: var(--text-color);
+    outline: none;
+    border-radius: 20px;
+}
+.submitcmtcontainer input:focus {
+    background-color: var(--component-color);
+    border: none;
+    
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    
+}
+
+.submitcmtcontainer button {
+    font-size: 15px;
+    height: 40px;
+   
+}
+
+.cmtprofilepiccontainer {
+    height: 50px;
+    width: 50px;
+    background-color: var(--component-color);
+    margin-left: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cmtprofilepiccontainer img {
+    height: 90%;
+    width: 90%;
+    border-radius: 100px;
+}
+
+
+.dummy {
+    width: 100%;
+    height: 1000px;
+    
+}
+
+.nftstatcontainer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    color: var(--text-color);
+    font-family: 'Poppins';
+    margin-bottom: 3px;
+}
+
+.nftstatcontainer svg {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.nftstatcontainer h3 {
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+
+@media (max-width: 1500px) {
+
+
+.postflexcontainer {
+
+    height: 2000px;
+}
+
+    .postpagecontainer {
+        
+        
+        flex-direction: column;
+       
+        align-items: center;
+        
+        margin-top: 0px;
+        
+    }
+    
+
+    .nftcontentcontainer {
+        width: 240%;
+    }
+
+
+
+    .cmtcontainer {
+        height: 800px;
+        width: 85%;
+     
+        margin-left: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+
+    .postflexcontainer {
+
+        height: 2000px;
+    }
+    
+        .postpagecontainer {
+            
+            
+            flex-direction: column;
+           
+            align-items: center;
+            
+            margin: 0px;
+            
+        }
+        
+    
+        .nftcontentcontainer {
+            width: 290%;
+        }
+
+        .cmtcontainer {
+            height: 800px;
+            width: 100%;
+         
+            margin-left: 0;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .submitcmtcontainer {
+            width: 90%;
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .cmtprofilepiccontainer {
+            margin: 0;
+        }
+
+        .submitcmtcontainer button {
+
+            height: 40px;
+            width: 90px;
+            font-size: 13px;
+            border-radius: 20px;
+        }
+}
